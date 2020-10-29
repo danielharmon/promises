@@ -12,7 +12,7 @@ var pluckFirstLineFromFile = function (filePath, callback) {
     if (err) {
       callback(err, null);
     } else {
-      const firstLine = file.toString().split('\n')[0]
+      const firstLine = file.toString().split('\n')[0];
       callback(null, firstLine);
     }
   })
@@ -22,9 +22,9 @@ var pluckFirstLineFromFile = function (filePath, callback) {
 var getStatusCode = function (url, callback) {
   request(url, (err, response, body) => {
     if (err) {
-      callback(err)
+      callback(err);
     } else {
-      callback(null, response.statusCode)
+      callback(null, response.statusCode);
     }
   })
 };
