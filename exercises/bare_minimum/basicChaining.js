@@ -34,5 +34,6 @@ var fetchProfileAndWriteToFile = function(readFilePath, writeFilePath) {
 
 // Export these functions so we can test them
 module.exports = {
-  fetchProfileAndWriteToFile: fetchProfileAndWriteToFile
+  fetchProfileAndWriteToFile: fetchProfileAndWriteToFile,
+  writeToFileAsync
 };
